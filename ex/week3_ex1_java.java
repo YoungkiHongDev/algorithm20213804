@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner sc new Scanner(System.in); //System.in 표준입력
+        Scanner sc = new Scanner(System.in); //System.in 표준입력
 
         // N, K를 공백을 기준으로 구분하여 입력받기
         int n = sc.nextInt();
