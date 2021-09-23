@@ -20,12 +20,12 @@ public class Main {
         String[] using = use.split(" "); //사용시간 공백으로 자르기
         int[] waiting = new int[wait]; //총 대기인원만큼 배열 생성
         
-        //대기인원 크기 배열에 각 대기시간 저장하기
+        //대기인원 크기 배열에 각 사용시간 저장하기
         for(int i=0; i<waiting.length; i++) {
             waiting[i] = Integer.parseInt(using[i]);
         }
 
-        Arrays.sort(waiting); //대기시간 오름차순 정렬
+        Arrays.sort(waiting); //사용시간 오름차순 정렬
         int arrsize = waiting.length; //배열 크기 저장
 
         //총 사용 및 대기시간 구하기
