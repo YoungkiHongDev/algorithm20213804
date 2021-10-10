@@ -1,4 +1,4 @@
-// 문제3) 음료수 얼려 먹기 - C++
+// 문제3) 음료수 얼려 먹기 - C
 #include <stdio.h>
 #include <stdbool.h>
 
