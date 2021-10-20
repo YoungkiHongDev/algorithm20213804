@@ -1,4 +1,15 @@
 // 문제1) 미로탈출 BFS - C++
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int n, m;
+int graph[201][201];
+
+// 이동할 네 가지 방향 정의 (상, 하, 좌, 우)
+int dx[] = {-1, 1, 0, 0};
+int dy[] = {0, 0, -1, 1};
+
 int bfs(int x, int y) {
     // 큐(Queue) 구현을 위해 queue 라이브러리 사용
     queue<pair<int, int> > q;
@@ -27,17 +38,6 @@ int bfs(int x, int y) {
     // 가장 오른쪽 아래까지의 최단 거리 반환
     return graph[n - 1][m - 1];
 }
-
-#include <bits/stdc++.h>
-
-using namespace std;
-
-int n, m;
-int graph[201][201];
-
-// 이동할 네 가지 방향 정의 (상, 하, 좌, 우)
-int dx[] = {-1, 1, 0, 0};
-int dy[] = {0, 0, -1, 1};
 
 int main(void) {
     cin >> n >> m;

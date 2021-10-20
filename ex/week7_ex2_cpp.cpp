@@ -10,17 +10,6 @@ int graph[201][201];
 int dx[] = {-1, 1, 0, 0};
 int dy[] = {0, 0, -1, 1};
 
-int main(void) {
-    cin >> n >> m;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            scanf("%1d", &graph[i][j]);
-        }
-    }
-    cout << dfs(0, 0) << '\n';
-    return 0;
-}
-
 int dfs(int x, int y) {
     // 스택(Stack) 구현을 위해 stack 라이브러리 사용
     stack<pair<int, int> > st;
@@ -47,4 +36,15 @@ int dfs(int x, int y) {
     }
     // 가장 오른쪽 아래까지의 최단 거리 반환
     return graph[n - 1][m - 1];
+}
+
+int main(void) {
+    cin >> n >> m;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            scanf("%1d", &graph[i][j]);
+        }
+    }
+    cout << dfs(0, 0) << '\n';
+    return 0;
 }
